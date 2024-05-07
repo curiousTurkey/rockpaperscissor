@@ -17,14 +17,12 @@ class _GameScreenState extends State<GameScreen> {
     double heightWithoutAppBar = MediaQuery.of(context).size.height - (kBottomNavigationBarHeight + kToolbarHeight);
     return Scaffold(
       backgroundColor: CupertinoColors.systemGreen,
-      appBar: AppBar(
-        leading: IconButton(onPressed: () {  }, icon: const Icon(Icons.menu)),),
       body: SizedBox(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              height: heightWithoutAppBar / 1.9,
+              height: heightWithoutAppBar / 2.5,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.fill,
